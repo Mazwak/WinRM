@@ -16,6 +16,7 @@
 
 require_relative 'soap'
 require_relative 'header'
+require_relative '../output'
 
 module WinRM
   module WSMV
@@ -36,7 +37,7 @@ module WinRM
         resp_doc = nil
         request_msg = WinRM::WSMV::CommandOutput.new(@connection_opts, cmd_out_opts).build
         done_elems = []
-        output = Output.new
+        output = WinRM::Output.new
 
         while done_elems.empty?
           resp_doc = send_get_output_message(request_msg)

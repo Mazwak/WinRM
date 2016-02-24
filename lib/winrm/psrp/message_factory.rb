@@ -15,6 +15,7 @@
 # limitations under the License.
 
 require 'erubis'
+require_relative 'message'
 
 module WinRM
   module PSRP

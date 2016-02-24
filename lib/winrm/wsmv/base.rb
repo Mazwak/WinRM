@@ -14,8 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+require 'base64'
+require 'builder'
+require 'gyoku'
 require_relative 'soap'
 require_relative 'header'
+require_relative '../helpers/iso8601_duration'
 
 module WinRM
   module WSMV
