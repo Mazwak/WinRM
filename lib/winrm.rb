@@ -17,6 +17,7 @@
 require 'logging'
 require_relative 'winrm/version'
 require_relative 'winrm/connection'
+require_relative 'winrm/exceptions'
 
 # Main WinRM module entry point
 module WinRM
