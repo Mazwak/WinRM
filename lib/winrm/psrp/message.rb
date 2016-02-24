@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-require_relative '../helpers/uuid'
+require_relative 'uuid'
 
 module WinRM
   # PowerShell Remoting Protcol module
@@ -23,7 +23,7 @@ module WinRM
     # PowerShell Remoting Protocol base message.
     # http://download.microsoft.com/download/9/5/E/95EF66AF-9026-4BB0-A41D-A4F81802D92C/%5BMS-PSRP%5D.pdf
     class Message
-      include WinRM::UUIDHelper
+      include UUID
 
       # Length of all the blob header fields:
       # BOM, pipeline_id, runspace_pool_id, message_type, blob_destination
