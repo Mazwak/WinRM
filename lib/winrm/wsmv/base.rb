@@ -19,7 +19,6 @@ require 'builder'
 require 'gyoku'
 require_relative 'soap'
 require_relative 'header'
-require_relative '../helpers/iso8601_duration'
 
 module WinRM
   module WSMV
